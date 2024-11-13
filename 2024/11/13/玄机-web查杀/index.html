@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>theonEyy</title>
+    <title> | theonEyy</title>
     <meta name="author" content="theonEyy" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -42,7 +42,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -152,39 +154,17 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div
-        id="home-background"
-        ref="homeBackground"
-        data-images="/images/background.jpg"
-    ></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>theonEyy</h1>
-                <h3>To explore</h3>
-                <h5></h5>
-            </div>
-        </span>
+            <div class="article">
+    <div>
+        <h1></h1>
     </div>
-</div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    true
->
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-web%E6%9F%A5%E6%9D%80/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/11/13
+        </span>
         
         <span class="category">
             <a href="/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/">
@@ -195,19 +175,26 @@
             </a>
         </span>
         
-        <span class="date">
+        
+        <span class="tags">
             <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
+                <i class="fa-solid fa-tags fa-fw"></i>
             </span>
-            2024/11/13
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #ff7d73">
+                    -玄机
+                </a>
+            </span>
+            
         </span>
         
-        
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="玄机-第一章-应急响应"><a href="#玄机-第一章-应急响应" class="headerlink" title="[玄机]第一章 应急响应"></a>[玄机]第一章 应急响应</h2><h2 id="webshell查杀"><a href="#webshell查杀" class="headerlink" title="webshell查杀"></a>webshell查杀</h2><p>我这里使用Tabby Terminal进行远程连接</p>
+    
+    <div class="content" v-pre>
+        <h2 id="玄机-第一章-应急响应"><a href="#玄机-第一章-应急响应" class="headerlink" title="[玄机]第一章 应急响应"></a>[玄机]第一章 应急响应</h2><h2 id="webshell查杀"><a href="#webshell查杀" class="headerlink" title="webshell查杀"></a>webshell查杀</h2><p>我这里使用Tabby Terminal进行远程连接</p>
 <p>1.黑客webshell里面的flag flag{xxxxx-xxxx-xxxx-xxxx-xxxx}</p>
 <p>分析webshell可以利用在线工具 也可以手敲命令</p>
 <p><strong>1.在线工具 我这里用的有D盾和微步云沙箱(<a target="_blank" rel="noopener" href="https://s.threatbook.com/">https://s.threatbook.com/</a>)</strong></p>
@@ -271,116 +258,13 @@
 <p>错误日志：</p>
 <p>&#x2F;var&#x2F;log&#x2F;nginx&#x2F;error.log</p>
 
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #00bcd4">-玄机</a>
-        </span>
-        
-    </div>
-    <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-web%E6%9F%A5%E6%9D%80/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/09/27/first/">
-        <h2 class="post-title">天天开心</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/9/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="好好吃饭"><a href="#好好吃饭" class="headerlink" title="好好吃饭"></a>好好吃饭</h2>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/09/27/first/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/09/27/hello-world/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/9/27
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>测试文章</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/09/27/hello-world/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
     
-    <span class="current">1</span>
     
     
     
     
-</div>
-
-    </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">theonEyy</div>
-        <div class="description">
-            <p>Better and Better</p>
-
-        </div>
-        
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -412,6 +296,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
