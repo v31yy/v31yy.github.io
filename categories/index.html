@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>theonEyy</title>
+    <title>Categories: -应急响应 | theonEyy</title>
     <meta name="author" content="theonEyy" />
     <meta name="description" content="好好吃饭 天天开心" />
     <meta name="keywords" content="" />
@@ -41,8 +41,6 @@
 
 
 
-
-<script src="/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -152,42 +150,14 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div
-        id="home-background"
-        ref="homeBackground"
-        data-images="/images/background.jpg"
-    ></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>theonEyy</h1>
-                <h3>To explore</h3>
-                <h5>好好吃饭 天天开心</h5>
-            </div>
-        </span>
-    </div>
-</div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    true
->
-    <div id="home-posts">
+            <div id="archives">
+    
+    <div class="categories-tags">
         
-
-<div class="post">
-    <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-web%E6%9F%A5%E6%9D%80/">
-        <h2 class="post-title">玄机--第一章--webshell查杀</h2>
-    </a>
-    <div class="category-and-date">
         
-        <span class="category">
-            <a href="/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/">
+        
+        <span>
+            <a href="/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
                 <span class="icon">
                     <i class="fa-solid fa-bookmark fa-fw"></i>
                 </span>
@@ -195,68 +165,47 @@
             </a>
         </span>
         
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/11/13
-        </span>
+        
         
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>迟早都要学，早学早结束</p>
-
-            
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2024/11/13</div>
+            <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-web%E6%9F%A5%E6%9D%80/">
+                <h3>玄机--第一章--webshell查杀</h3>
+            </a>
+            <div class="info">
+                
+                <span class="category">
+                    <a href="/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/">
+                        <span class="icon">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </span>
+                        -应急响应
+                    </a>
+                </span>
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #03a9f4">
+                            -玄机
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
         </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #ffa2c4">-玄机</a>
-        </span>
-        
-    </div>
-    <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-web%E6%9F%A5%E6%9D%80/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
-    
-    <span class="current">1</span>
-    
-    
-    
-    
-</div>
-
-    </div>
-    
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">theonEyy</div>
-        <div class="description">
-            <p>Better and Better</p>
-
-        </div>
-        
-        
-    </div>
-</div>
-
     </div>
     
 </div>

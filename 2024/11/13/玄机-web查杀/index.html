@@ -184,7 +184,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #00bcd4">
+                <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #ffa2c4">
                     -玄机
                 </a>
             </span>
@@ -204,7 +204,10 @@
 <p>scp -r root@ip:&#x2F;var&#x2F;www&#x2F;html ~&#x2F;桌面&#x2F;yingji</p>
 <p>放入网页分析即可</p>
 <p><strong>2.列出几个常用的分析命令</strong></p>
-<p>find .&#x2F; type f -name “<em>.jsp” | xargs grep “exec(“<br>find .&#x2F; type f -name “</em>.php” | xargs grep “eval(“<br>find .&#x2F; type f -name “<em>.asp” | xargs grep “execute(“<br>find .&#x2F; type f -name “</em>.aspx” | xargs grep “eval(“ </p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">find ./ type f -name &quot;*.jsp&quot; | xargs grep &quot;exec(&quot; </span><br><span class="line">find ./ type f -name &quot;*.php&quot; | xargs grep &quot;eval(&quot; </span><br><span class="line">find ./ type f -name &quot;*.asp&quot; | xargs grep &quot;execute(&quot; </span><br><span class="line">find ./ type f -name &quot;*.aspx&quot; | xargs grep &quot;eval(&quot; </span><br></pre></td></tr></table></figure>
+
+
+
 <p><code>find ./ -type f</code> 就是查找当前目录及其子目录中的所有普通文件（即不是目录、设备文件等）</p>
 <p><code>xargs</code> 的作用是接收 <code>find</code> 命令返回的文件路径列表，并将它们传递给 <code>grep</code> 命令进行处理</p>
 <p><code>| xargs grep &quot;eval(&quot;</code>：将查找到的每个 <code>.php</code> 文件传递给 <code>grep</code> 命令，查找文件中是否包含 <code>eval(</code> 关键字</p>
