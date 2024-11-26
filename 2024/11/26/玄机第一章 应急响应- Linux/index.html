@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title> | theonEyy</title>
+    <title>玄机--第一章-liunx入侵排查 | theonEyy</title>
     <meta name="author" content="theonEyy" />
     <meta name="description" content="好好吃饭 天天开心" />
     <meta name="keywords" content="" />
@@ -156,7 +156,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1></h1>
+        <h1>玄机--第一章-liunx入侵排查</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -166,11 +166,36 @@
             2024/11/26
         </span>
         
+        <span class="category">
+            <a href="/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                -应急响应
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #00a596">
+                    -玄机
+                </a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        <h2 id="第一章-应急响应-Linux入侵排查"><a href="#第一章-应急响应-Linux入侵排查" class="headerlink" title="第一章 应急响应- Linux入侵排查"></a>第一章 应急响应- Linux入侵排查</h2><p>到&#x2F;var&#x2F;www把html目录dump下来</p>
+        <p>[TOC]</p>
+<h2 id="第一章-应急响应-Linux入侵排查"><a href="#第一章-应急响应-Linux入侵排查" class="headerlink" title="第一章 应急响应- Linux入侵排查"></a>第一章 应急响应- Linux入侵排查</h2><p>到&#x2F;var&#x2F;www把html目录dump下来</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -czvf html.tar.gz ./</span><br></pre></td></tr></table></figure>
 
 <h3 id="1-web目录存在木马，请找到木马的密码提交"><a href="#1-web目录存在木马，请找到木马的密码提交" class="headerlink" title="1.web目录存在木马，请找到木马的密码提交"></a>1.web目录存在木马，请找到木马的密码提交</h3><p>使用河马</p>
